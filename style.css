@@ -877,12 +877,64 @@ a:hover {
     font-size: var(--text-sm);
 }
 
+.promo-modal{
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: rgba(15,23,42,0.85);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.promo-modal-content {
+    background: #1e293b;
+    border-radius: 16px;
+    max-width: 90vw;
+    width: 400px;
+    margin: 10% auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    border: 2px solid #2563eb;
+    color: #fff;
+    position: relative;
+}
+
+.promo-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 1.5rem;
+    color: #38bdf8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.promo-modal-content h3 {
+    margin-bottom:1rem; 
+    color: #38bdf8;
+}
+
+.promo-modal-content p {
+    margin-bottom:1.2rem;
+}
+
+.promo-modal-cta{
+    width:100%;
+    display:inline-block;
+}
+
 .gymbro-slideshow {
     background-image: url('https://raw.githubusercontent.com/SonJaeMark/website-image-repo/main/gymbro/hero.png');
 }
 
 .sarah-slideshow {
     background-image: url('https://raw.githubusercontent.com/SonJaeMark/website-image-repo/main/Sarah%20Mitchell%20Gallery/hero.png');
+}
+
+.promo-modal-10Client{
+    color:#38bdf8;
 }
 
 .alex-slideshow {
